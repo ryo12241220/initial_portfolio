@@ -14,13 +14,13 @@ body {
   padding: 0;
 }
 
-.header,
 .main,
 .fotter {
   width: 980px;
   margin: 0 auto;
 }
 
+/*---------------------------------------------------------------------------------------*/
 .header {
   display: flex;
   justify-content: space-between;
@@ -32,9 +32,12 @@ body {
   z-index: 2;
   background-color: #000000;
 }
-
+.header h1 {
+  margin-left: 30px;
+}
 .header ul {
   display: flex;
+  padding-right: 50px;
 }
 .header-navi {
   display: -webkit-box;
@@ -88,7 +91,7 @@ body {
 .custom-btn:active {
   top: 2px;
 }
-/*main*/
+/*--------------------------------------------------------------------------------------------------------------*/
 .main {
   border-bottom: 1px solid #fff;
 }
@@ -238,20 +241,15 @@ h4 {
 .contents {
   width: 60%;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
 }
-
-.contents-skill {
-  -webkit-box-flex: 1;
-  -ms-flex: auto;
-  flex: auto;
+.contents ul {
+  display: flex;
+}
+.contents li {
   width: 25%;
   height: 150px;
   text-align: center;
+  list-style: none;
 }
 
 .skill-contents {
@@ -273,4 +271,75 @@ h4 {
 .head {
   font-size: 25px;
 }
-/*# sourceMappingURL=portforio.css.map */
+
+.works {
+  margin-bottom: 50px;
+}
+.workd-img {
+  margin: 0 auto;
+  width: 50%;
+  background-clip: padding-box;
+  border: 10px solid #ffffff;
+}
+.work-dental {
+  width: 100%;
+}
+
+@media all and (max-width: 768px) {
+  .header {
+    display: inline-block;
+    width: 100%;
+  }
+  .header ul {
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .header li {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    flex: none;
+  }
+  .main,
+  .fotter {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .main-img-cut {
+    padding: 0;
+  }
+  .plofile {
+    display: block;
+  }
+  .plofile div {
+    margin: 0 auto;
+  }
+  .plofile ul {
+    margin-top: 50px;
+    margin-left: 10%;
+  }
+  .service-wrap {
+    display: inline-block;
+    width: 100%;
+  }
+  .service-item {
+    width: 100%;
+  }
+  .sentence {
+    padding: 0;
+  }
+  .contents {
+    width: 100%;
+  }
+  .contents ul {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  .contents li {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+  }
+}
