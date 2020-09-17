@@ -239,11 +239,12 @@ h4 {
 }
 
 .contents {
-  width: 60%;
+  width: 62%;
   margin: 0 auto;
 }
 .contents ul {
   display: flex;
+  padding-left: 0;
 }
 .contents li {
   width: 25%;
@@ -340,6 +341,6 @@ h4 {
   .contents li {
     width: 50%;
     margin: 0;
-    padding: 0;
+    padding: 20px 0 0 0;
   }
 }
