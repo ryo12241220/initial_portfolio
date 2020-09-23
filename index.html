@@ -10,19 +10,23 @@
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   </head>
   <body>
-    <section class="header">
-
+    <section id="header">
+      
       <h1>Portfolio</h1>
       <div class="header-navi">
         <ul>
-          <li><a href="#" class="custom-btn top-btn">Top</a></li>
+        <li><a href="#" class="custom-btn top-btn">Top</a></li>
         <li><a href="#" class="custom-btn plofile-btn">Plofile</a></li>
         <li><a href="#" class="custom-btn service-btn">Service</a></li>
         <li><a href="#" class="custom-btn skill-btn">Skill</a></li>
         <li><a href="#" class="custom-btn works-btn">Works</a></li>
+        <li><a href="#" class="custom-btn footer-btn">Question</a></li>
       </ul>
       </div>
-    </section>
+   
+      </section>
+
+    <section id="main">
     <section class="main">
       <div class="main-img-cut">
         <img class="main-img" src="beach.jpeg" />
@@ -37,10 +41,14 @@
           仕事は、人生の大半を占めるものです。その一部だけかもしれませんが、お客様のお仕事を精一杯お手伝いさせて下さい。
         </p>
       </div>
+    </section>
+  </section>
+  <section id="plofile">
+    <section class="plofile">
       <div class="plofile-contents">
         <h2 class="message "><span class="under">Plofile</span></h2>
-        <div class="plofile">
-         <div>写真をはる予定</div>
+        <div class="plofiles">
+         <div><img src="plofile.jpg"></div>
 
                <ul >
               <li class=plofile-list>
@@ -62,10 +70,14 @@
             </ul>
           </div>   
         </div>
+      </section>
+    </section>
         <!-- <p class="sentence sentence-skill">
           あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
         </p> -->
       </div>
+  
+    <section id="service">
       <section class="service">
         <h2 class="message"><span class="under">Service</span></h2>
         <h3 class="message fadein head">Web制作を通じて、お客様の潜在的な課題を解決出来るよう提案致します。</h3>
@@ -74,7 +86,7 @@
         <div class="service-wrap">
             <section class="service-item">
               <h4>Direction</h4>
-                <img src="./img/growth.png" alt="">
+                
                 <p class="sentence">
                   お客様の理想のホームページを作成する為、綿密なご連絡を行います。また、お客様の要望を正確にヒアリングを行い、下書きをのタイミングで一度確認をして頂き修正&再検討致します。
                   お客様にとってより良いデザインを作成させて下さい
@@ -83,14 +95,14 @@
             </section>
             <section class="service-item">
               <h4>Design</h4>
-                <img src="./img/satisfaction.png" alt="">
+                
                 <p class="sentence">
                   お客様とのヒアリングに基づき、デザインを作成致します。どのようなデザインがお客様にとって最もよいのか、どうすればお客様の課題を解決できるかを最優先に検討致します。
                 </p>
             </section>
             <section class="service-item">
               <h4>Coding</h4>
-                <img src="./img/online.png" alt="">
+              
                 <p class="sentence">
                   デザイン修正が発生することもある為、『可読性』『再利用性』の高いコーディングを心がけます。<br>また、世の中にある Web制作の約8割が、WordPressを使用しております。そのWordPressを用いての制作も可能です。
                 </p>
@@ -98,7 +110,8 @@
           </div>
         </div>
     </section>
-
+  </section>
+  <section id="skill">
       <div class="skill-contents">
         <h2 class="message skill"><span class="under">Skill</span></h2>
         <div class="contents">
@@ -121,6 +134,8 @@
           あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ。
         </p> -->
       </div>
+    </section>
+  <section id="works">
       <div class="works">
         <h2 class="message"><span class="under">Works</span></h2>
        <div class="workd-img">
@@ -128,7 +143,22 @@
         </div>
       </div>
     </section>
-    <section class="fotter"></section>
+    <section id="footer">
+      <h2 class="message skill"><span class="under">Question</span></h2>
+      <div class="contact-form">
+
+        <p>お名前(必須)</p>
+        <input>
+
+        <p>メールアドレス(必須)</p>
+        <input>
+
+        <p>お問い合わせ内容(必須)</p>
+        <textarea></textarea>
+        <div class="botton">
+          <input class="contact-submit" type="submit" value="送信">
+          </div>
+    </section>
     <script src="portforio.js"></script>
   </body>
 </html>

@@ -14,25 +14,30 @@ $(function () {
       500
     );
   });
+  var height = $("#header").height();
   $(".top-btn").click(function () {
-    var top = $(".header").offset().top;
+    var top = $("#main").offset().top;
     $("html, body").animate({ scrollTop: top }, 500);
   });
   $(".plofile-btn").click(function () {
-    var plofile = $(".plofile-contents").offset().top;
+    var plofile = $("#plofile").offset().top - height;
     $("html, body").animate({ scrollTop: plofile }, 500);
   });
   $(".service-btn").click(function () {
-    var service = $(".service").offset().top;
+    var service = $("#service").offset().top - height;
     $("html, body").animate({ scrollTop: service }, 500);
   });
   $(".skill-btn").click(function () {
-    var skill = $(".skill").offset().top;
+    var skill = $("#skill").offset().top - height;
     $("html, body").animate({ scrollTop: skill }, 500);
   });
   $(".works-btn").click(function () {
-    var works = $(".works").offset().top;
+    var works = $("#works").offset().top - height;
     $("html, body").animate({ scrollTop: works }, 500);
+  });
+  $(".footer-btn").click(function () {
+    var footer = $("#footer").offset().top - height;
+    $("html, body").animate({ scrollTop: footer }, 500);
   });
   //--------------------------------------------------------------------------------
   //スクロール時
