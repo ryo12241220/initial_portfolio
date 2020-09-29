@@ -10,17 +10,26 @@
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   </head>
   <body>
+    <input id ="menu" type="checkbox" />
+    <label for="menu" class="open">
+      <nav class="menu clearfix">
+      <div class="menu1"></div>
+      <div class="menu2"></div>
+      <div class="menu3"></div>
+      </nav>
+    </label>
+    <label for="menu" class="back"></label>
     <section id="header">
-      
+      <label for ="menu" class="close">✖</label>
       <h1>Portfolio</h1>
       <div class="header-navi">
         <ul>
-        <li><a href="#" class="custom-btn top-btn">Top</a></li>
-        <li><a href="#" class="custom-btn plofile-btn">Plofile</a></li>
-        <li><a href="#" class="custom-btn service-btn">Service</a></li>
-        <li><a href="#" class="custom-btn skill-btn">Skill</a></li>
-        <li><a href="#" class="custom-btn works-btn">Works</a></li>
-        <li><a href="#" class="custom-btn footer-btn">Question</a></li>
+        <li><a href="#" class="custom-btn top-btn "><label for="menu" class="label">Top</label></a></li>
+        <li><a href="#" class="custom-btn plofile-btn"><label for="menu" class="label">Plofile</label></a></li>
+        <li><a href="#" class="custom-btn service-btn"><label for="menu" class="label">Service</label></a></li>
+        <li><a href="#" class="custom-btn skill-btn"><label for="menu" class="label">Skill</label></a></li>
+        <li><a href="#" class="custom-btn works-btn"><label for="menu" class="label">Works</label></a></li>
+        <li><a href="#" class="custom-btn footer-btn"><label for="menu" class="label">Question</label></a></li>
       </ul>
       </div>
    
@@ -50,24 +59,25 @@
         <div class="plofiles">
          <div><img src="plofile.jpg"></div>
 
-               <ul >
+            <ul>
               <li class=plofile-list>
-                <p >名前 :</p>
-                <p>りょう(24)</p>
+                <p class="list-main">名前 :</p>
+                <p class="list-side">りょう(24)</p>
               </li>
               <li class=plofile-list>
-              <p>所在地 :</p>
-                <p>東京都</p>
+              <p class="list-main">所在地 :</p>
+                <p class="list-side">東京都</p>
               </li>
               <li class=plofile-list>
-                <p>趣味 :</p>
-                <p>カラオケ、スポーツ、音楽、お酒、漫画等</p>
+                <p class="list-main">趣味 :</p>
+                <p class="list-side"> カラオケ、スポーツ、音楽、お酒、漫画等</p>
               </li>
               <li class=plofile-list>
-                <p>一言 :</p>
-                <p>最近はコロナの影響で外出する機会が減りましたね。<br>早く元の生活に戻って、マスクなしで生活したいです。。</p>
+                <p class="list-main">一言 :</p>
+                <p class="list-side">最近はコロナの影響で外出する機会が減りましたね。<br>早く元の生活に戻って、マスクなしで生活したいです。。</p>
               </li>
             </ul>
+
           </div>   
         </div>
       </section>
@@ -88,23 +98,23 @@
               <h4>Direction</h4>
                 
                 <p class="sentence">
-                  お客様の理想のホームページを作成する為、綿密なご連絡を行います。また、お客様の要望を正確にヒアリングを行い、下書きをのタイミングで一度確認をして頂き修正&再検討致します。
-                  お客様にとってより良いデザインを作成させて下さい
-                  。
+                  お客様からの返信は、遅くとも<strong>1時間~半日以内</strong>に返信致します。また、他の方よりも<strong>安価で対応</strong>させて頂きます。(要相談)<br>しかし、安価だからと言ってクオリティを下げるわけではありません。一つ一つの案件に対し、真剣に対応致します。
+                  <br>お客様にとってより良いデザインを、是非私に作成させて下さい。
+                  
                 </p>
             </section>
             <section class="service-item">
               <h4>Design</h4>
                 
                 <p class="sentence">
-                  お客様とのヒアリングに基づき、デザインを作成致します。どのようなデザインがお客様にとって最もよいのか、どうすればお客様の課題を解決できるかを最優先に検討致します。
+                  お客様の要望を正確にヒアリングを行い、デザインを作成致します。ヒアリングの仕方は、<strong>電話やZoom(近場であれば直接)など</strong>臨機応変に対応できますので気軽にご相談ください。<br>どのようなデザインがお客様にとって最もよいのか、どうすればお客様の課題を解決できるかを最優先に検討致します。
                 </p>
             </section>
             <section class="service-item">
               <h4>Coding</h4>
               
                 <p class="sentence">
-                  デザイン修正が発生することもある為、『可読性』『再利用性』の高いコーディングを心がけます。<br>また、世の中にある Web制作の約8割が、WordPressを使用しております。そのWordPressを用いての制作も可能です。
+                  今後デザイン修正等が発生することも考え、<strong>『保守しやすい』『再利用しやすい』</strong>コーディングを心がけます。<br>Javascriptを使用した動きのあるサイトも作成可能です。また、WordPressでの作成も可能ですので、お客様の希望に合わせた提案をさせて頂きます。
                 </p>
             </section>
           </div>
@@ -138,6 +148,7 @@
   <section id="works">
       <div class="works">
         <h2 class="message"><span class="under">Works</span></h2>
+        <p>ポートフォリオ等が増え次第、随時更新致します。</p>
        <div class="workd-img">
           <a href="https://ryo12241220.github.io/dental_portfoliio/" ><img src="./dental.png" class="work-dental"></a>
         </div>
